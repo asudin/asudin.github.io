@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artiom Sudin - Portfolio</title>
+    <title>Artiom Sudin - Unity Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app"></div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-brand" onclick="showPage('home')">AS</button>
+            <div class="nav-links">
+                <button class="nav-link" onclick="showPage('home')">Projects</button>
+                <button class="nav-link" onclick="showPage('experience')">Experience</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div id="home-page" class="page active">
+            <section class="hero">
+                <h1 class="hero-title" id="hero-name"></h1>
+                <p class="hero-subtitle" id="hero-title"></p>
+                <p class="hero-location" id="hero-location"></p>
+                
+                <div class="social-links" id="social-links"></div>
+            </section>
+
+            <section class="projects-section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid" id="projects-grid"></div>
+            </section>
+        </div>
+
+        <div id="experience-page" class="page">
+            <h1 class="page-title">Experience</h1>
+            <div id="experience-content"></div>
+        </div>
+    </main>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
     <script src="data/portfolio.js"></script>
     <script src="main.js"></script>
 </body>
