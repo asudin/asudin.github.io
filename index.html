@@ -3,53 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artiom Sudin - Unity Developer Portfolio</title>
+    <title>Artiom Sudin - Unity Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <nav id="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="nav-container">
-            <button class="nav-brand" onclick="showPage('home')">AS</button>
+            <button class="nav-logo" onclick="showPage('home')">AS</button>
             <div class="nav-links">
-                <button class="nav-link" onclick="showPage('home')">Projects</button>
-                <button class="nav-link" onclick="showPage('experience')">Experience</button>
+                <button class="nav-link" id="nav-home" onclick="showPage('home')">Projects</button>
+                <button class="nav-link" id="nav-experience" onclick="showPage('experience')">Experience</button>
             </div>
         </div>
     </nav>
 
-    <main id="main-content">
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
         <div id="home-page" class="page active">
+            <!-- Hero Section -->
             <section class="hero">
-                <h1 class="hero-title" id="hero-name"></h1>
-                <p class="hero-subtitle" id="hero-title"></p>
-                <p class="hero-location" id="hero-location"></p>
+                <h1 class="hero-title">Artiom Sudin</h1>
+                <p class="hero-subtitle">Unity Developer</p>
+                <p class="hero-location">Riga, Latvia</p>
                 
-                <div class="social-links" id="social-links"></div>
+                <div class="social-links">
+                    <a href="mailto:asudin.dev@gmail.com" class="social-icon" title="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="https://github.com/asudin" target="_blank" class="social-icon" title="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://t.me/asudin" target="_blank" class="social-icon" title="Telegram">
+                        <i data-lucide="send"></i>
+                    </a>
+                </div>
             </section>
+			
+			<div class="filter-buttons">
+			  <button class="filter-btn active" data-filter="all">All</button>
+			  <button class="filter-btn" data-filter="pc">PC</button>
+			  <button class="filter-btn" data-filter="web">Web</button>
+			  <button class="filter-btn" data-filter="mobile">Mobile</button>
+			</div>
 
             <section class="projects-section">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid" id="projects-grid"></div>
             </section>
+			
+			<section class="projects-section">
+				<h2 class="section-title">Demos & Other</h2>
+				<div class="projects-grid" id="demos-grid"></div>
+			</section>
         </div>
 
+        <!-- Experience Page -->
         <div id="experience-page" class="page">
             <h1 class="page-title">Experience</h1>
             <div id="experience-content"></div>
         </div>
     </main>
 
+    <!-- Project Modal -->
     <div id="project-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 id="modal-title"></h2>
-                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <button class="modal-close" onclick="closeModal()">
+                    <i data-lucide="x"></i>
+                </button>
             </div>
             <div class="modal-body" id="modal-body"></div>
         </div>
     </div>
+	
+	<div id="image-lightbox" class="lightbox">
+		<img id="lightbox-image" src="" alt="">
+	</div>
 
-    <script src="data/portfolio.js"></script>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
