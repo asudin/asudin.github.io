@@ -166,6 +166,25 @@ const portfolioData = {
 		},
 	  ],
 	demos: [
+	{
+			id: "casino-slots-demo",
+			name: "Casino Slots Demo",
+			platform: "WebGL, Mobile",
+			image: "images/demos/casino-slots/cover.jpg",
+			role: "Unity Developer",
+			description: "A demo project made to showcase a casino management game. Player can accumulate ordinary and premium currency, use it to buy casino slots, which have progression for passive income. There is shop, where player can convert his common currency to premium. Additionally, there are 5 different slots, where player can play and earn actively income.",
+			highlights: [
+				"Created casino reels mechanic for active income generation", 
+				"Implemented a passive casino management system",
+				"Created in app shop system for currency exchange",
+				"Utilized Scriptable Objects for static data management between systems"
+			],
+			media: ["images/demos/casino-slots/demo.mp4", "images/demos/casino-slots/cover.jpg", "images/demos/casino-slots/cover2.jpg", "images/demos/casino-slots/cover3.jpg", "images/demos/casino-slots/cover4.jpg"],
+			links: [
+				{ type: "Github", url: "https://github.com/asudin/casino-slots-demo" }
+			],
+			tags: ["Unity", "Mobile", "Demo"]
+		},
 		{
 			id: "playable-ad",
 			name: "Playable Ad Demo (Playworks)",
@@ -174,8 +193,8 @@ const portfolioData = {
 			role: "Unity Developer",
 			description: "This is a demonstration of a playable ad that I create by using Unity Playworks plugin. The playable ad allows to show the user an ad with plyable (interactable) elements. Once the player interacts with the game a CTA screen is shown. All metrics are written and sent to the Playworks dashboard.",
 			highlights: [
-				"Interactable playable ad create with Unity Playworks plugin.", 
-				"Send CTA metrics to Playworks dashboard for marketing team."
+				"Interactable playable ad create with Unity Playworks plugin", 
+				"Send CTA metrics to Playworks dashboard for marketing team"
 			],
 			media: ["images/demos/playable-ad/cover.jpg", "images/demos/playable-ad/cover2.jpg"],
 			links: [
