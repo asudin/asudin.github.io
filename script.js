@@ -100,7 +100,7 @@ const portfolioData = {
 		},
 		{
 		  id: "crystal-siege",
-		  name: "Crystal Siege: Tower Defense",
+		  name: "Crystal Siege",
 		  platform: "Mobile (Android)",
 		  image: "images/crystal-siege/cover.jpg",
 		  role: "Unity Developer",
