@@ -177,9 +177,10 @@ const portfolioData = {
 				"Interactable playable ad create with Unity Playworks plugin.", 
 				"Send CTA metrics to Playworks dashboard for marketing team."
 			],
-			media: ["images/demos/playable-ad/cover.jpg"],
+			media: ["images/demos/playable-ad/cover.jpg", "images/demos/playable-ad/cover2.jpg"],
 			links: [
-				{ type: "Github", url: "https://github.com/asudin/playable-ads-demo" }
+				{ type: "Github", url: "https://github.com/asudin/playable-ads-demo" },
+				{ type: "Demo", url: "https://playground.lunalabs.io/preview/247447/337743/6cbab1a46e05f773e0c36ba7adddd7003dc74867d2fcf4c780d3a21a95fd0032" }
 			],
 			tags: ["Unity", "Playable Ad", "Playworks", "Demo"]
 		}
