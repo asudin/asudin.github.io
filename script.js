@@ -167,6 +167,27 @@ const portfolioData = {
 	  ],
 	demos: [
 		{
+			id: "mini-golf-demo",
+			name: "Mini Golf Demo",
+			platform: "PC",
+			image: "images/demos/mini-golf/cover.png",
+			role: "Unity Developer",
+			description: "A physics-based mini golf game built with Unity featuring dynamic hole mechanics and time-based scoring. Players shoot balls into moving targets with a trajectory prediction system, where holes randomly switch between bonus and penalty states. Built with service-oriented architecture using dependency injection and a custom game state machine.",
+			highlights: [
+				"Implemented trajectory prediction system with touch/mouse input controls",
+				"Created dynamic hole spawning system with randomized position changes",
+				"Designed state machine for game flow management using Single Entry Point pattern",
+				"Built timer-based scoring system with bonus/penalty mechanics",
+				"Utilized Dependency Injection container for service-oriented architecture",
+				"Added visual feedback with VFX and animations for hole state transitions"
+			],
+			media: ["images/demos/mini-golf/demo.mp4", "images/demos/mini-golf/cover.png", "images/demos/mini-golf/cover2.png", "images/demos/mini-golf/cover3.png"],
+			links: [
+				{ type: "Github", url: "https://github.com/asudin/pet-passport-demo" }
+			],
+			tags: ["Unity", "Mobile", "Unity Physics", "Single Entry Point architecture", "DI", "Demo"]
+		},
+		{
 			id: "pet-passport-demo",
 			name: "Pet Passport Demo (.NET)",
 			platform: "Web",
@@ -182,7 +203,8 @@ const portfolioData = {
 			],
 			media: ["images/demos/pet-passport/cover.jpg", "images/demos/pet-passport/cover2.jpg", "images/demos/pet-passport/cover3.jpg", "images/demos/pet-passport/cover4.jpg", "images/demos/pet-passport/cover5.jpg"],
 			links: [
-				{ type: "Github", url: "https://github.com/asudin/pet-passport-demo" }
+				{ type: "Github", url: "https://github.com/asudin/pet-passport-demo" },
+				{ type: "Demo", url: "https://petpassport-demo-b2cvdpdxf8cxdmax.canadacentral-01.azurewebsites.net/" }
 			],
 			tags: ["ASP.NET", "SQL Database", "Bootstrap", "Entity Framework", "Demo"]
 		},
