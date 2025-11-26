@@ -166,7 +166,27 @@ const portfolioData = {
 		},
 	  ],
 	demos: [
-	{
+		{
+			id: "pet-passport-demo",
+			name: "Pet Passport Demo (.NET)",
+			platform: "Web",
+			image: "images/demos/pet-passport/cover.jpg",
+			role: ".NET Developer",
+			description: "This is a demo project of a pet passport created in .NET with Bootstrap. User can add pets with corresponding information, as well as register upcoming vaccines for future monitoring. The project was done in ASP.NET Core MVC for backend, with Entity Framework, Azure SQL Database and Bootstrap for the UI.",
+			highlights: [
+				"Implemented full CRUD operations with Entity Framework Core and Azure SQL Database",
+				"Configured contained database user authentication with Azure SQL for secure access",
+				"Designed responsive UI with Bootstrap for cross-device compatibility",
+				"Deployed to Azure App Service with automated CI/CD pipeline",
+				"Integrated vaccination reminder system for proactive pet health monitoring"
+			],
+			media: ["images/demos/pet-passport/cover.jpg", "images/demos/pet-passport/cover2.jpg", "images/demos/pet-passport/cover3.jpg", "images/demos/pet-passport/cover4.jpg", "images/demos/pet-passport/cover5.jpg"],
+			links: [
+				{ type: "Github", url: "https://github.com/asudin/pet-passport-demo" }
+			],
+			tags: ["ASP.NET", "SQL Database", "Bootstrap", "Entity Framework", "Demo"]
+		},
+		{
 			id: "casino-slots-demo",
 			name: "Casino Slots Demo",
 			platform: "WebGL, Mobile",
