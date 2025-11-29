@@ -1,4 +1,3 @@
-// Portfolio Data
 const portfolioData = {
     personal: {
         name: "Artiom Sudin",
@@ -15,11 +14,11 @@ const portfolioData = {
             period: "Sep 2024 – Present",
             description: "Developing WebGL format games by doing full development cycle as a solo Unity developer from project’s architecture to Playable Ads. Projects include different type of games, where most of them are in the hybrid-casual genre. Additionally, am responsible for maintaining legacy code on older projects.",
             highlights: [
-                "Optimize gameplay and assets for WebGL and low-spec mobile devices",
-                "Integrate Firebase SDK and PlayFab for online user data management like leaderboards and user stats",
-                "Create modular systems and reusable components for rapid prototyping of new promotional games",
-                "Develop Playable Ads using Unity Playworks (Luna)",
-				"Maintain legacy code on older projects"
+                "Optimized gameplay and assets for WebGL and low-spec mobile devices",
+                "Integrated Firebase SDK and PlayFab for online user data management like leaderboards and user stats",
+                "Created modular systems and reusable components for rapid prototyping of new promotional games",
+                "Developed Playable Ads using Unity Playworks (Luna)",
+				"Maintained legacy code on older projects"
             ],
             stack: ["Unity", "Playworks", "Firebase", "PlayFab", "Git", "DOTween", "UniTask"]
         },
