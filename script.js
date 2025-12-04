@@ -182,7 +182,7 @@ const portfolioData = {
 			],
 			media: ["images/demos/mini-golf/demo.mp4", "images/demos/mini-golf/cover.png", "images/demos/mini-golf/cover2.png", "images/demos/mini-golf/cover3.png"],
 			links: [
-				{ type: "Github", url: "https://github.com/asudin/pet-passport-demo" }
+				{ type: "Github", url: "https://github.com/asudin/mini-golf-demo" }
 			],
 			tags: ["Unity", "Mobile", "Unity Physics", "Single Entry Point architecture", "DI", "Demo"]
 		},
